@@ -15,16 +15,16 @@
                 </nav>
             </section>
             <!-- JUMBOTRON SECTION -->
-            <section>
+            <section class="jumbotron-adjustments">
                 <div class="jumbotron-container">
                     <div>
-                        <span>Hungry?</span>
+                        <span class="jumbotron-first-text">Hungry?</span>
                     </div>
                     <div>
-                        <span>Great Food Delivered</span>
+                        <span class="jumbotron-second-text"><span>Great Food</span> Delivered</span>
                     </div>
-                    <div>
-                        <span><a href="#">Button</a></span>
+                    <div class="button-container">
+                        <a href="#"><span class="jumbotron-button">VIEW OUR MENU <i class="fa-solid fa-circle-arrow-right"></i> </span></a>
                     </div>
                 </div>
             </section>
@@ -41,6 +41,8 @@
             }
         },
         methods:{
+            // FUNCTION THAT SETS ACTIVE NAV ELEMENT
+            // ToDo:prevent page reload when clicking a nav element
             setActiveMenuVoice(index){
                 this.activeMenuVoice = index;
             }
@@ -52,7 +54,7 @@
     @import "../assets/scss/common.scss";
     .header-background{
         background-image: url(../assets/img/home-background-hero-scaled.jpg);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     .header-container{
@@ -60,7 +62,7 @@
         margin: 0 auto;
     }
     .header-content{
-        padding-top: 2rem;
+        padding-top: 100px;
         display: flex;
         justify-content: space-between;
     }
@@ -81,10 +83,38 @@
     }
     // ACTIVE CLASS
     .active{
-        color: yellow;
+        color: $color-cube-9;
     }
     // JUMBOTRON
+    .jumbotron-adjustments{
+        padding-top: 250px;
+    }
     .jumbotron-container{
-        width: 30%;
+        width: 40%;
+    }
+    .jumbotron-first-text{
+        font-size: 2.5rem;
+        color: $color-cube-1;
+        font-weight: bold;
+    }
+    .jumbotron-second-text{
+        font-size: 5rem;
+        color: $color-cube-1;
+        font-weight: bold;
+    }
+    .jumbotron-second-text span{
+        color: $color-cube-9;
+    }
+    // BUTTON
+    .button-container{
+        margin-top: 2rem;
+        padding-bottom: 400px;
+    }
+    .jumbotron-button{
+        padding: 0.8rem 2rem;
+        background-color: $color-cube-3;
+        border-radius: 25px;
+        color: $color-cube-1;
+        font-weight: bold;
     }
 </style>
