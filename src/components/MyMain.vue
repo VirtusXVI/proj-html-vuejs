@@ -5,10 +5,10 @@
         <section class="banner">
             <div>
                 <ul class="banner-content">
-                    <li><i class="fa-regular fa-clock"></i>24/7 DELIVERY</li>
-                    <li><i class="fa-solid fa-burger"></i>OVER 100 DISHES</li>
-                    <li><i class="fa-solid fa-mobile-screen-button"></i>IN APP ORDERING</li>
-                    <li><i class="fa-solid fa-car"></i>FAST DELIVERY</li>
+                    <li><i class="fa-regular fa-clock"></i> 24/7 DELIVERY</li>
+                    <li><i class="fa-solid fa-burger"></i> OVER 100 DISHES</li>
+                    <li><i class="fa-solid fa-mobile-screen-button"></i> IN APP ORDERING</li>
+                    <li><i class="fa-solid fa-car"></i> FAST DELIVERY</li>
                 </ul>
             </div>
         </section>
@@ -51,15 +51,51 @@
             </div>
         </section>
     </div>
+    <!-- JUMBOTRON 2 -->
     <div class="jumbotron2-background">
         <img src="../assets/material/takeout/svg-0.svg" alt="">
+    </div>
+    <!-- MENU SECTION -->
+    <div class="container">
+        <div class="menu-adjustments">
+            <div class="main-subtitle">
+                <h2>Menu Categories</h2>
+            </div>
+            <div class="button-container menu-button-adjustments">
+                <a href="#"><span class="button">VIEW OUR MENU <i class="fa-solid fa-circle-arrow-right"></i></span></a>
+            </div>
+        </div>
+        <div class="menu-illustrations">
+            <div v-for="item,index in categories" :key="index" class="card">
+                <div>
+                    <img :src="getImg(categoriesImages[index])" alt="appetizer image">
+                </div>
+                <span>{{ item }}</span>
+            </div>
+        </div>
+        <div class="features-illustrations">
+            <div class="features-card">
+
+            </div>
+        </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-
+    data(){
+        return{
+            categories:["APPETIZERS", "BURGERS", "PIZZAS", "FRIES", "SIDES", "DESSERTS", "BEVERAGES", "SPECIALS"],
+            categoriesImages:[require("../assets/img/appetizers-menu-background.jpg"), require("../assets/img/burgers-menu-background.jpg"), require("../assets/img/pizza-menu-background.jpg"), require("../assets/img/fries-menu-background.jpg"), require("../assets/img/sides-menu-background.jpg"), require("../assets/img/desserts-menu-background.jpg"), require("../assets/img/beverages-menu-background.jpg"), require("../assets/img/specials-menu-background.jpg")],
+            featuresIcons:[""]
+        }
+    },
+    methods:{
+        getImg(imgpath){
+            return imgpath
+        }
+    }
 }
 </script>
 
@@ -117,5 +153,43 @@ export default {
         background-image: url(../assets/img/first-order-background-scaled.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    // MENU SECTION
+    .menu-adjustments{
+        padding-top: 150px;
+        padding-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-button-adjustments{
+        padding: 0;
+        margin: 0;
+    }
+    // ILLUSTRATIONS
+    .menu-illustrations{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 1rem;
+    }
+    .card{
+        height: calc(90% / 2);
+        width: calc(90% / 4);
+        position: relative;
+    }
+    .card span{
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .features-illustrations{
+        display: flex;
+    }
+    .features-card{
+        width: calc(90% / 4);
     }
 </style>
