@@ -5,7 +5,7 @@
             <section class="header-content">
                 <!-- LOGO -->
                 <div>
-                    <img src="../assets/img/takeout-logo.png" alt="logo">
+                    <a href="#"><img src="../assets/img/takeout-logo.png" alt="logo"></a>
                 </div>
                 <!-- NAVBAR -->
                 <nav>
