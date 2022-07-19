@@ -36,7 +36,6 @@
     export default {
         data(){
             return{
-                navbarOptions:['Home <i class="fa-solid fa-chevron-down"></i>', "Order Online", "About", "News", "Contact Us", '<i class="fa-solid fa-cart-shopping"></i>'],
                 activeMenuVoice: 0,
             }
         },
@@ -46,6 +45,9 @@
             setActiveMenuVoice(index){
                 this.activeMenuVoice = index;
             }
+        },
+        props:{
+            navbarOptions: Array,
         }
     }
 </script>

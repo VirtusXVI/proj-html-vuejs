@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MyHeader/>
+    <MyHeader :navbarOptions="navbarOptions"/>
     <MyMain/>
   </div>
 </template>
@@ -14,6 +14,11 @@ export default {
   components: {
     MyHeader,
     MyMain
+  },
+  data(){
+    return{
+      navbarOptions:['Home <i class="fa-solid fa-chevron-down"></i>', "Order Online", "About", "News", "Contact Us", '<i class="fa-solid fa-cart-shopping"></i>'],
+    }
   }
 }
 </script>
