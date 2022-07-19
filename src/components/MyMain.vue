@@ -93,6 +93,7 @@
             </div>
         </div>
     </div>
+    <!-- APP SECTION -->
     <div class="ordering-app-background">
         <div class="container">
             <div class="download-app">
@@ -102,6 +103,29 @@
                     <a href="#"><img src="../assets/img/app-store-badge.png" alt="app store"></a>
                     <a href="#"><img src="../assets/img/play-store-badge.png" alt="play store"></a>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- NEWS SECTION -->
+    <div class="container">
+        <div class="news-adjustments">
+            <div class="main-subtitle">
+                <h2>Latest News</h2>
+            </div>
+            <div class="button-container menu-button-adjustments">
+                <a href="#"><span class="button">READ MORE NEWS <i class="fa-solid fa-circle-arrow-right"></i></span></a>
+            </div>
+        </div>
+        <div class="news-cards">
+            <div class="news-card">
+                <img src="../assets/img/pancake-burger.jpg" alt="new pancake burger">
+                <h2>NEW: The Pancake Burger</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, maxime magni odio corrupti obcaecati suscipit distinctio! Quasi dicta sint doloremque, ipsum vel aspernatur temporibus odit in nesciunt, laborum rerum. Provident!
+            </div>
+            <div class="news-card">
+                <img src="../assets/img/new-milkshake-menu.jpg" alt="new milkshake menu">
+                <h2>NEW: Milkshake Menu</h2>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus commodi ea ipsam aperiam molestiae eligendi architecto possimus, pariatur iusto magnam obcaecati repudiandae quae fugit distinctio adipisci eveniet iure tempore ullam!
             </div>
         </div>
     </div>
@@ -263,5 +287,26 @@ export default {
         width: 30%;
         margin-right: 1rem;
         margin-top: 2rem;
+    }
+    // NEWS SECTION
+    .news-adjustments{
+        padding-top: 150px;
+        padding-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .news-cards{
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .news-card{
+        width: calc(90% / 2);
+        text-align: center;
+    }
+    .news-card h2{
+        font-size: 2.3rem;
+        margin: 1rem 0;
     }
 </style>
