@@ -91,24 +91,4 @@
     .active{
         color: $color-cube-9;
     }
-    // JUMBOTRON
-    .jumbotron-adjustments{
-        padding-top: 250px;
-    }
-    .jumbotron-container{
-        width: 40%;
-    }
-    .jumbotron-first-text{
-        font-size: 2.5rem;
-        color: $color-cube-1;
-        font-weight: bold;
-    }
-    .jumbotron-second-text{
-        font-size: 5rem;
-        color: $color-cube-1;
-        font-weight: bold;
-    }
-    .jumbotron-second-text span{
-        color: $color-cube-9;
-    }
 </style>

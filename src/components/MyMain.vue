@@ -55,8 +55,8 @@
     <div class="jumbotron2-background">
         <img src="../assets/material/takeout/svg-0.svg" alt="">
     </div>
-    <!-- MENU SECTION -->
     <div class="container">
+        <!-- MENU SECTION -->
         <div class="menu-adjustments">
             <div class="main-subtitle">
                 <h2>Menu Categories</h2>
@@ -73,9 +73,35 @@
                 <span>{{ item }}</span>
             </div>
         </div>
+        <!-- FEATURES CARDS -->
         <div class="features-illustrations">
             <div class="features-card">
-
+                <span class="vegetarian"><i class="fa-solid fa-leaf "></i></span>
+                <span>Vegetarian</span>
+            </div>
+            <div class="features-card">
+                <span class="glutenfree"><i class="fa-solid fa-wheat-awn"></i></span>
+                <span>Gluten Free</span>
+            </div>
+            <div class="features-card">
+                <span class="dairyfree"><i class="fa-solid fa-bottle-droplet "></i></span>
+                <span>Dairy Free</span>
+            </div>
+            <div class="features-card">
+                <span class="ketofriendly"><i class="fa-solid fa-bacon"></i></span>
+                <span>Keto Friendly</span>
+            </div>
+        </div>
+    </div>
+    <div class="ordering-app-background">
+        <div class="container">
+            <div class="download-app">
+                <span class="jumbotron-first-text">Download Our</span>
+                <span class="jumbotron-second-text"><span>Ordering App</span></span>
+                <div class="images-alignments">
+                    <a href="#"><img src="../assets/img/app-store-badge.png" alt="app store"></a>
+                    <a href="#"><img src="../assets/img/play-store-badge.png" alt="play store"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -186,10 +212,56 @@ export default {
         left: 50%;
         transform: translate(-50%);
     }
+    // FEATURES CARD
     .features-illustrations{
         display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
     }
     .features-card{
         width: calc(90% / 4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .vegetarian{
+        color: green;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    .glutenfree{
+        color: yellow;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    .dairyfree{
+        color: lightblue;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    .ketofriendly{
+        color: red;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    // ORDERING APP SECTION
+    .ordering-app-background{
+        background-image: url(../assets/img/app-ordering-scaled.jpg);
+        background-size: cover;
+        margin-top: 150px;
+        padding-top: 150px;
+    }
+    .download-app{
+        width: 50%;
+        padding-bottom: 200px;
+    }
+    .download-app span{
+        display: block;
+    }
+    .download-app img{
+        width: 30%;
+        margin-right: 1rem;
+        margin-top: 2rem;
     }
 </style>
