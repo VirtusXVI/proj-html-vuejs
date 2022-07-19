@@ -62,6 +62,9 @@
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
             <a href="#"><i class="fa-regular fa-envelope"></i></a>
         </div>
+        <div class="copyright">
+            <span class="highlighted">Copyright 2012 - 2020 | Avada Theme by</span><span>ThemeFusion</span><span class="highlighted">| All Rights Reserved | Powered by </span><span>Wordpress</span>
+        </div>
     </div>
   </div>
 </template>
@@ -172,6 +175,12 @@
         margin: auto;
         display: flex;
         justify-content: space-between;
-        padding-bottom: 420px;
+    }
+    .copyright{
+        padding-bottom: 100px;
+        margin-bottom: 0;
+    }
+    .copyright span{
+        display: inline;
     }
 </style>
