@@ -39,6 +39,30 @@
             </div>
         </div>
     </div>
+    <div class="lower-footer-container">
+        <div>
+            <img class="footer-logo" src="../assets/img/takeout-logo.png" alt="logo">
+        </div>
+        <div>
+            <span class="lower-footer-subtitle">Stay In The Loop</span>
+            <span>Sign up to receive up to date news and offers direcly in your inbox:</span>
+        </div>
+        <form>
+            <div>
+                <label for="Email"></label>
+                <input class="form-text" type="Email" id="Email" placeholder="youremail@gmail.com">
+            </div>
+            <button class="form-button" type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </div>
   </div>
 </template>
 
@@ -106,5 +130,48 @@
     }
     .bigger{
         font-size: 1.5rem;
+    }
+    // LOWER FOOTER
+    .lower-footer-container{
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        padding-top: 100px;
+    }
+    .lower-footer-container *{
+        margin-bottom: 2rem;
+    }
+    .lower-footer-container span{
+        display: block;
+    }
+    .footer-logo{
+        width: 200px;
+    }
+    .lower-footer-subtitle{
+        font-size: 3rem;
+        color: #fcd66c;
+        font-weight: bold;
+    }
+    .form-text{
+        width: 100%;
+        padding: 0.8rem 0;
+        border-radius: 25px;
+        text-align: center;
+    }
+    .form-button{
+        width: 100%;
+        padding: 0.8rem 0;
+        border-radius: 25px;
+        background-color: #cc1a26;
+        color: white;
+        font-weight: bold;
+    }
+    .socials{
+        width: 30%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 420px;
     }
 </style>
